@@ -1,19 +1,25 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap'); /*importando fonte passion one */
 
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap'); /* importando fonte Sriracha */
 
 :root {
     --font1:Verdana, Geneva, Tahoma, sans-serif;
     --font2: 'Passion One', cursive;
     --font3: 'Sriracha', cursive;
+    /* 
+        Criada as variáveis para as fontes e para melhor uso
+    */
 }
 
 * {
     margin:  0px;
     padding: 0px;
     font-size: 1em; 
+    /* 
+       margin e fontes padroes
+    */
 
 }
 
@@ -21,12 +27,18 @@ html , body {
     min-height: 100vh;
     background-color: darkgray;
     font-family: var(--font1);
+    /* 
+        Definindo a cor de fundo e a fonte padrão
+    */
 }
 
 header {
     background-color: black;
     color:white;
     text-align: center;
+    /* 
+        Definindo a cor de fundo e a cor da fonte e alinhamento do header
+    */
 }
 
 header h1 {
@@ -34,10 +46,18 @@ header h1 {
     font-variant: small-caps;
     font-family: var(--font2);
     font-size: 10vw;
+
+    /*
+        aplicando espaçamento e tamanho variado da fonte do h1
+    */
 }
 
 header p {
     padding-bottom: 50px;
+
+    /*
+        aplicando espaçamento no paragrafo
+    */
 
 }
 
@@ -45,6 +65,9 @@ a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
+    /*
+        configuração pdrão para os links
+    */
 }
 
 a:hover {
@@ -52,6 +75,11 @@ a:hover {
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.747);
     text-decoration: underline;
+
+    /*
+        configuração de hover para os links
+        mundando a cor a decoração e adicionando um background
+    */
 }
 
 section {
@@ -61,16 +89,26 @@ section {
     line-height: 5vw;
     padding-left: 30px;
     font-family: var(--font3);
+
+    /*
+        configuração padrão para as seções
+    */
 }
 
 section p {
     padding: 2em;
+
+    /*
+        espaçamento para os paragrafos
+    */
 }
 
 section.normal {
     background-color: white;
     color: black;
-    
+    /*
+        configuração padrão para as seções normais
+    */
 }
 
 section.imagem {
@@ -78,6 +116,11 @@ section.imagem {
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.678);
     background-attachment: fixed;
+
+    /*
+        configuração padrão para as seções de imagem
+        cor de fundo cor do texto sobreamento e fixação da imagem
+    */
 }
 
 section.imagem > p {
@@ -85,19 +128,31 @@ section.imagem > p {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.527);
     text-shadow: 1px 1px 0px black;
+
+    /*
+        configuração para os paragrafos dentro da seção de imagem
+        espaçamento cor de fundo com transparencia e sombra no texto
+    */
 }
 
 section#img01 {
     background-image: url('../imagens/background001.jpg');
     background-position: right center;
     background-size: cover;
-    
+    /*
+        configuração para a seção de imagem 01
+        imagem de fundo posição e tamanho
+    */
 }
 
 section#img02 {
     background-image: url('../imagens/background002.jpg');
     background-position: right center;
     background-size: cover;
+    /*
+        configuração para a seção de imagem 02
+        imagem de fundo posição e tamanho
+    */
 }
 
 footer {
@@ -108,4 +163,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+
+    /*
+        configuração para o footer
+        cor de fundo cor do texto alinhamento espaçamento e fixação
+    */
 }
