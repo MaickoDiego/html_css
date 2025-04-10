@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox flex-basis</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap; /* Alinha os itens em uma única linha, sem quebra */
+        }
+
+        .item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px; /* Define a largura mínima de cada item */
+            padding: 15px;
+            margin: 19px;
+
+            flex-grow: 1; /* Permite que os itens cresçam para preencher o espaço disponível */
+            flex-shrink: 0; /* Permite que os itens encolham se necessário */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="conteiner">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+           
+        </div>
+    </main>
+</body>
+</html>
