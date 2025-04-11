@@ -29,15 +29,17 @@ header {
 }
 
 header > h1 {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     padding: 10px;
     margin: 5px;
 
     flex: 0 0 200px;
+
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 header > nav {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 
     display: flex;
     flex-flow: row wrap;
