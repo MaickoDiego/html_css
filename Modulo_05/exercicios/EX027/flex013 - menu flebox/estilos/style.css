@@ -21,14 +21,44 @@ header {
     background-color: gray;
     color: white;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1 {
     border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+
+    flex: 0 0 200px;
 }
 
 header > nav {
     border: 1px solid black;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .4s;
+    
 }
 
 main {
