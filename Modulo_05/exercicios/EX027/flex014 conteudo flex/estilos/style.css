@@ -27,4 +27,52 @@ header, section.normal {
 section.flex-content {
     background-color: rgba(128, 128, 128, 0.507);
     padding: 20px;
+    
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section > article {
+    border: 2px dashed green; /* pontilhado para visualização */
+}
+
+article.text-media {
+    display:flex;
+    flex-flow: row wrap;
+}
+
+article.media-text {
+    display:flex;
+    flex-flow: row  wrap-reverse;
+    
+}
+
+article > div.text {
+    flex: 1 1 500px;
+    padding: 10px;
+   
+    border: 2px dashed red; /* pontilhado para visualização */
+}
+
+article > div.media {
+    flex: 1 1 500px;
+    padding: 10px;
+    border: 2px dashed blue; /* pontilhado para visualização */
+}
+
+div.media > img {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+
+    width: 300px;
+}
+
+div.media > video {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+
+    width: 90%;
 }
